@@ -163,7 +163,7 @@ public class ExportJobPlaceholder {
         optional = true,
         description = "Bigtable Max Attempts",
         helpText = "The maximum number of retry attempts for the Bigtable client.")
-    ValueProvider<Integer> getBigtableMaxAttempts();
+    ValueProvider<String> getBigtableMaxAttempts();
 
     @TemplateCreationParameter(value = "false")
     @Description("Wait for pipeline to finish.")
